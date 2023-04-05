@@ -4,34 +4,72 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="icon"
+      type="image/png"
+      href="https://cdn-icons-png.flaticon.com/512/1086/1086437.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <title>Furqan</title>
+    <title>Muhammad Furqan Ahmed</title>
   </head>
   <body>
-    <div id="nav-menu">
-      <div id="left-section">
-        <img
-          class="nav-logo"
-          src="https://cdn-icons-png.flaticon.com/512/1120/1120972.png"
-          alt=""
-        />
-        <p>Muhammad Furqan Ahmed</p>
+    <header class="header">
+      <a href="#" class="logo">Muhammad Furqan Ahmed</a>
+      <box-icon name="menu" id="menu-icon"></box-icon>
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Home Section -->
+
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hello, there!</h3>
+        <h1>Furqan Ahmed</h1>
+        <h3>And I'm a <span>Full Stack Web Developer</span></h3>
+        <div class="social-media">
+          <a href=""><i class="bx bxl-facebook"></i></a>
+          <a href=""><i class="bx bxl-linkedin"></i></a>
+          <a href=""><i class="bx bxl-instagram"></i></a>
+          <a href=""><i class="bx bxl-github"></i></a>
+        </div>
+        <a href="#" class="download-btn">Donwload Resume</a>
       </div>
-      <div id="nav-section">
-        <div id="home">Home</div>
-        <div id="about" class="about section">About</div>
-        <div id="skills">Skills</div>
-        <div id="projects">Projects</div>
-        <div id="contact">Contact</div>
+      <div class="home-img">
+        <img src="furqan - Edited (1).png" alt="" />
       </div>
-    </div>
-    <div></div>
+    </section>
+
+    <!-- About Section -->
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img
+              src="https://i.pinimg.com/originals/1d/67/5f/1d675febf60233077c6e0ac7733d679e.gif"
+              alt=""
+            />
+          </div>
+      <div class="about-content">
+        <h2 class="heading" >About <span>Me</span></h2>
+        <h3>Full Stack Web Developer</h3>
+        <p>A full stack web developer with a passion for creating
+            beautiful, functional websites. The expertise lies in
+            HTML, CSS, Javascript, React and Node.js. Has a keen
+            eye for detail and takes great pride in the work. Enjoys
+            working on creative projects and pushing the
+            boundaries of what is possible. Always striving to learn
+            new things and to further the development skills.</p>
+      </div>
+    </section>
   </body>
 </html>
-<script src="./portfolio/script.js"></script>
+<script src="script.js"></script>
