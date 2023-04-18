@@ -48,3 +48,13 @@ ScrollReveal().reveal(".home-content h1, .cat ", { origin: "left" });
 ScrollReveal().reveal(".home-content p, .about-content ", {
   origin: "right",
 });
+
+let icon=document.getElementById("change-theme");
+let theme=document.querySelector(".test");
+
+icon.onclick=function(){
+  document.body.classList.toggle("light-theme")
+  if(document.body.classList.contains("light-theme")){
+    theme.className="bx bxs-sun"
+  }
+}
