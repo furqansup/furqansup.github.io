@@ -15,10 +15,10 @@
   --main-color: #0ef;
 }
 .light-theme {
-  --bg-color: #fdf4f5;
-  --second-bg-color: #e8a0bf;
-  --text-color: #ba90c6;
-  --main-color: #c0dbea;
+  --bg-color: #ba7c7c;
+  --second-bg-color: #ec7070;
+  --text-color: #f0e4d2;
+  --main-color: #ffffff;
 }
 html {
   font-size: 62.5%;
@@ -59,6 +59,12 @@ section {
 }
 #change-theme {
   font-size: 18px;
+  cursor: pointer;
+}
+#change-theme:hover {
+  color: var(--main-color);
+  transform: rotate(360deg);
+  transition: transform 0.5s ease-in-out;
 }
 .logo {
   font-size: 2.5rem;
@@ -406,8 +412,8 @@ span {
   border-color: var(--main-color);
   transform: scale(1.02);
 }
-.services-box{
-  /* height: 30vh; */
+.services-box {
+  height: 70vh;
 }
 .services-box i {
   font-size: 7rem;
@@ -417,8 +423,10 @@ span {
   font-size: 3rem;
 }
 .services-box p {
-  font-size: 1.6rem;
+  font-size: 2rem;
   margin: 1rem 0 3rem;
+  text-align: justify;
+  color: var(--text-color);
 }
 .skills-grid {
   display: grid;
@@ -429,7 +437,9 @@ span {
 }
 .skills-grid img {
   margin: auto;
-  width: 50px;
+  width: 110px;
+  height: 37px;
+  border-bottom: 5px solid black;
 }
 
 /* projects */
@@ -547,6 +557,14 @@ span {
 .contact form .download-btn {
   margin-top: 2rem;
   cursor: pointer;
+}
+input::placeholder {
+  color: rgb(195, 195, 195);
+  opacity: 0.6;
+}
+textarea::placeholder {
+  color: rgb(195, 195, 195);
+  opacity: 0.6;
 }
 
 /* footer */
