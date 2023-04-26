@@ -15,10 +15,10 @@
   --main-color: #0ef;
 }
 .light-theme {
-  --bg-color: #ba7c7c;
-  --second-bg-color: #ec7070;
-  --text-color: #f0e4d2;
-  --main-color: #ffffff;
+  --bg-color: rgb(214, 253, 250);
+  --second-bg-color: rgb(249, 232, 232);
+  --text-color: black;
+  --main-color: rgb(206, 2, 77);
 }
 html {
   font-size: 62.5%;
@@ -433,13 +433,15 @@ span {
   align-items: center;
   gap: 10px;
   grid-template-columns: repeat(3, 1fr);
-  margin-bottom: 30px;
+  margin-bottom: 75px;
 }
 .skills-grid img {
   margin: auto;
   width: 110px;
   height: 37px;
   border-bottom: 5px solid black;
+}
+.read-more {
 }
 
 /* projects */
@@ -491,10 +493,12 @@ span {
 }
 .project-layer h4 {
   font-size: 3rem;
+  color: #161616;
 }
 .project-layer p {
   font-size: 1.6rem;
   margin: 0.3rem 0 1rem;
+  color: #161616;
 }
 .project-layer a {
   display: inline-flex;
@@ -559,12 +563,12 @@ span {
   cursor: pointer;
 }
 input::placeholder {
-  color: rgb(195, 195, 195);
-  opacity: 0.6;
+  color: rgb(166, 163, 163);
+  opacity: 0.8;
 }
 textarea::placeholder {
-  color: rgb(195, 195, 195);
-  opacity: 0.6;
+  color: rgb(166, 163, 163);
+  opacity: 0.8;
 }
 
 /* footer */
@@ -630,6 +634,16 @@ textarea::placeholder {
   .footer {
     padding: 2rem 3%;
   }
+  .services-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .read-more {
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    font-size: 0.5rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -683,6 +697,10 @@ textarea::placeholder {
     height: 30vh;
     margin-top: 7rem;
   }
+  .services-container {
+    display: flex;
+    flex-direction: column;
+  }
   .services-box h2 {
     margin-bottom: 3rem;
   }
@@ -717,6 +735,10 @@ textarea::placeholder {
   html {
     font-size: 50%;
   }
+  .services-container {
+    display: flex;
+    flex-direction: column;
+  }
   .contact form .input-box input {
     width: 100%;
   }
@@ -732,6 +754,10 @@ textarea::placeholder {
   .cat {
     width: 30vw;
     height: 10vh;
+  }
+  .services-container {
+    display: flex;
+    flex-direction: column;
   }
   .footer {
     flex-direction: column-reverse;

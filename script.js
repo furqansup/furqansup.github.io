@@ -55,3 +55,15 @@ let theme = document.querySelector(".test");
 icon.onclick = function () {
   document.body.classList.toggle("light-theme");
 };
+
+// function sendEmail() {
+//   Email.send({
+//     Host: "smtp.elasticemail.com",
+//     Username: "97mdfurqan@gmail.com",
+//     Password: "cVJJzPUExWTem6.",
+//     To: "furqanahmedmj@gmail.com",
+//     From: document.getElementById("email").value,
+//     Subject: document.getElementById("subject").value,
+//     Body: document.getElementById("message").value,
+//   }).then((message) => alert("sent"));
+// }

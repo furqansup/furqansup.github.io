@@ -201,13 +201,10 @@
               src="https://img.shields.io/badge/Adobe%20Photoshop%20-011d35?style=for-the-badge&logo=adobephotoshop&logoColor=white"
               alt=""
             />
-            <img
-              src="https://img.shields.io/badge/Adobe%20Illustrator%20-fe9a00?style=for-the-badge&logo=adobeillustrator&logoColor=white"
-              alt=""
-            />
           </div>
           <a
-            class="download-btn" id="resume-btn"
+            class="download-btn"
+            id="resume-btn"
             href="https://drive.google.com/file/d/1p7Vm06VmqAqjRr9E6mDzQGHHrWgXLUuI/view?usp=share_link"
             target="_blank"
             >Resume</a
@@ -216,7 +213,7 @@
         <div class="services-box">
           <i class="bx bxs-briefcase"></i>
           <h2>Experience</h2>
-          <p>
+          <p class="read-more">
             As a proficient full stack web developer, I possess a distinct skill
             set that enables me to efficiently develop, administer, and launch a
             diverse range of web applications. My technical capabilities include
@@ -234,7 +231,7 @@
             require the development and integration of APIs and the creation of
             secure user authentication and authorization systems.
           </p>
-          <a class="download-btn" href="#projects" >Projects</a>
+          <a class="download-btn" href="#projects">Projects</a>
         </div>
       </div>
     </section>
@@ -246,42 +243,49 @@
 
       <div class="project-container">
         <div class="project-box">
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/325/325616.png"
-            alt=""
-          />
+          <img src="resources/project (3).png" alt="" />
           <div class="project-layer">
-            <h4>Web Design</h4>
+            <h4>Fitness Blender Clone</h4>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
+              Fitness Blender helps people reach fitness goals with interactive
+              programs, diet plans and health coaching.
             </p>
-            <a href="#"><i class="bx bx-link-external"></i></a>
+            <a
+              href="https://melodious-sherbet-4c62c2.netlify.app/"
+              target="_blank"
+              ><i class="bx bx-link-external"></i
+            ></a>
           </div>
         </div>
         <div class="project-box">
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/325/325616.png"
-            alt=""
-          />
+          <img src="resources/project (3).png" alt="" />
           <div class="project-layer">
-            <h4>Web Design</h4>
+            <h4>Dermstore Clone</h4>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
+              Dermstore is online store offering a wide selection of beauty and
+              skincare products for customers to browse and purchase.
             </p>
-            <a href="#"><i class="bx bx-link-external"></i></a>
+            <a
+              href="https://stately-rabanadas-370a97.netlify.app/"
+              target="_blank"
+              ><i class="bx bx-link-external"></i
+            ></a>
           </div>
         </div>
         <div class="project-box">
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/325/325616.png"
-            alt=""
-          />
+          <img src="resources/project (3).png" alt="" />
           <div class="project-layer">
-            <h4>Web Design</h4>
+            <h4>Sephora Clone</h4>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
+              Sephora offers a wide range of makeup items, from foundation and
+              lipstick to eyeshadow and brushes, catering to a diverse range of
+              skin tones and preferences.
             </p>
-            <a href="#"><i class="bx bx-link-external"></i></a>
+            <a
+              href="https://dancing-maamoul-b9794a.netlify.app/"
+              target="_blank"
+              ><i class="bx bx-link-external"></i
+            ></a>
           </div>
         </div>
       </div>
@@ -292,18 +296,18 @@
     <section class="contact" id="contact">
       <h2 class="heading">Contact <span>Me!</span></h2>
 
-      <form action="#">
+      <form action="https://formspree.io/f/xeqwvwok" method="POST" target="_blank">
         <div class="input-box">
-          <input type="text" placeholder="Full Name" />
-          <input type="email" placeholder="Email Address" />
+          <input type="text" name="Name" placeholder="Full Name" />
+          <input id="email" name="email" type="email" placeholder="Email Address" />
         </div>
         <div class="input-box">
-          <input type="number" placeholder="Mobile Number" />
-          <input type="text" placeholder="Email Subject" />
+          <input id="mobile" name="Number" type="number" placeholder="Mobile Number" />
+          <input id="subject" type="text" name="Subject" placeholder="Subject" />
         </div>
         <textarea
-          name=""
-          id=""
+          name="Message"
+          id="message"
           cols="30"
           rows="10"
           placeholder="Your Message"
@@ -323,6 +327,7 @@
       </div>
     </footer>
   </body>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
 </html>
 <script src="https://unpkg.com/scrollreveal"></script>
 <script src="script.js"></script>
