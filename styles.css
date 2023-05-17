@@ -48,10 +48,10 @@ section {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 20vw;
+  width: 22%;
 }
 .header img {
-  width: 35px;
+  width: 10%;
   border-radius: 50%;
 }
 .header.sticky {
@@ -184,14 +184,14 @@ span {
 /* about */
 
 .about {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
   gap: 2rem;
   background: var(--second-bg-color);
 }
-.about-img {
-  width: 25vw;
+.about-div {
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+  align-items: center;
 }
 .about-content {
   width: 40%;
@@ -441,8 +441,6 @@ span {
   height: 37px;
   border-bottom: 5px solid black;
 }
-.read-more {
-}
 
 /* projects */
 
@@ -613,6 +611,17 @@ textarea::placeholder {
   .footer {
     padding: 2rem 3%;
   }
+  .services-box {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .services-box h2 {
+    margin-top: 30px;
+  }
+  .services-box .read-more {
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -622,8 +631,21 @@ textarea::placeholder {
   section {
     padding: 10rem 3% 2rem;
   }
+  .services-container {
+    display: flex;
+    flex-direction: column;
+  }
   .services-box {
     padding-bottom: 7rem;
+  }
+  .services-box {
+    padding: 50px 20px;
+  }
+  .services-box h2 {
+    font-size: 28px;
+  }
+  .services-box .read-more {
+    font-size: 16px;
   }
   .project-container {
     padding-bottom: 7rem;
@@ -703,6 +725,7 @@ textarea::placeholder {
   }
   .services-box h2 {
     margin-bottom: 3rem;
+    font-size: 24px;
   }
   .projects h2 {
     margin-bottom: 3rem;
@@ -723,6 +746,16 @@ textarea::placeholder {
   .project-container {
     grid-template-columns: 1fr;
   }
+  .services-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .services-box h2 {
+    font-size: 20px;
+  }
+  .services-box .read-more {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 450px) {
@@ -739,6 +772,18 @@ textarea::placeholder {
     display: flex;
     flex-direction: column;
   }
+  .about-content {
+    width: 90%;
+  }
+  .cat {
+    height: 120px;
+  }
+  .services-box h2 {
+    font-size: 18px;
+  }
+  .services-box .read-more {
+    display: block;
+  }
   .contact form .input-box input {
     width: 100%;
   }
@@ -750,6 +795,9 @@ textarea::placeholder {
   }
   .home-img {
     width: 90vw;
+  }
+  .about-content {
+    width: 60%;
   }
   .cat {
     width: 30vw;
