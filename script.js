@@ -34,20 +34,20 @@ window.onscroll = () => {
   navbar.classList.remove("active");
 };
 
-  // ScrollReveal({
-  //   reset: true,
-  //   distance: "80px",
-  //   duration: 2000,
-  //   delay: 200,
-  // });
-  // ScrollReveal().reveal(".home-content, .heading", { origin: "top" });
-  // ScrollReveal().reveal(".home-img, .services-container, .project-box", {
-  //   origin: "bottom",
-  // });
-  // ScrollReveal().reveal(".home-content h1, .cat ", { origin: "left" });
-  // ScrollReveal().reveal(".home-content p, .about-content ", {
-  //   origin: "right",
-  // });
+  ScrollReveal({
+    reset: true,
+    distance: "10px",
+    duration: 2000,
+    delay: 200,
+  });
+  ScrollReveal().reveal(".home-content, .heading", { origin: "top" });
+  ScrollReveal().reveal(".home-img, .services-container, .project-box", {
+    origin: "bottom",
+  });
+  ScrollReveal().reveal(".home-content h1", { origin: "left" });
+  ScrollReveal().reveal(".home-content p, .about-content ", {
+    origin: "right",
+  });
 
 let icon = document.getElementById("change-theme");
 let theme = document.querySelector(".test");
