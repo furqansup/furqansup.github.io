@@ -452,7 +452,6 @@ span {
 .skills-grid {
   display: flex;
   flex-wrap: wrap;
-
   align-items: center;
   gap: 10px;
   grid-template-columns: repeat(3, 1fr);
